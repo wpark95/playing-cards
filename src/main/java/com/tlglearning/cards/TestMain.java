@@ -11,13 +11,15 @@ public class TestMain {
   public static void main(String[] args) {
     Deck deck = new Deck();
     Random rng = new SecureRandom();
-
     System.out.println(deck);
+
     deck.shuffle(rng);
     System.out.println(deck);
+
 //    for (Card card : deck) {
 //      System.out.println(card);
 //    }
+
     deck.sort();
     System.out.println(deck);
 
